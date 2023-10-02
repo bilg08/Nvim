@@ -9,7 +9,9 @@ keymap.set("n", "<leader>to", ":tabnew<CR>")
 keymap.set("n", "<leader>tx", ":tabclose<CR>")
 keymap.set("n", "<leader>tn", ":tabn<CR>")
 keymap.set("n", "<leader>tp", ":tabp<Return>")
-
+keymap.set("n", "D", "6<down>")
+keymap.set("n", "T", "6<up>")
+keymap.set("n", "<leader>tt", "<cmd>ToggleTerm<cr>")
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 keymap.set("n", "<C-b>", ":NvimTreeToggle<Return>")
 -- telescope

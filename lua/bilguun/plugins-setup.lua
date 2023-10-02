@@ -14,7 +14,15 @@ return packer.startup(function(use)
 	use("numToStr/Comment.nvim")
 	use("nvim-tree/nvim-tree.lua")
 	use("kyazdani42/nvim-web-devicons")
+	use("akinsho/toggleterm.nvim")
 	use("nvim-lualine/lualine.nvim")
+	use({
+		"goolord/alpha-nvim",
+		requires = { "nvim-tree/nvim-web-devicons" },
+		config = function()
+			require("alpha").setup(require("alpha.themes.startify").config)
+		end,
+	})
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" })
 	-- autocompletion
